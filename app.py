@@ -3,9 +3,10 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 import streamlit as st
 from st_aggrid import AgGrid
 import pandas as pd 
-from transformers import pipeline
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer
 import torch
+st.set_page_config(layout="wide")
+
 
 st.set_page_config(layout="wide")
 
