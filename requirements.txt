@@ -3,5 +3,5 @@ pandas
 transformers==4.47.1
 torch==2.5.1
 streamlit-aggrid
-tokenizers==0.15.0
+tokenizers==0.22.0
 huggingface-hub>=0.19.0
