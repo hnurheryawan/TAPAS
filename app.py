@@ -42,14 +42,17 @@ st.markdown('<p style="font-family:sans-serif;font-size: 1.9rem;"> HertogAI Ques
 st.markdown("<p style='font-family:sans-serif;font-size: 0.9rem;'>Pre-trained TAPAS model runs on max 64 rows and 32 columns data. Make sure the file data doesn't exceed these dimensions.</p>", unsafe_allow_html=True)
 
 tqa = pipeline(task="table-question-answering", 
-                    model="google/tapas-large-finetuned-wtq",
-                    temperature=0.5)
+              model="google/tapas-large-finetuned-wtq",
+              temperature=0.5,
+              device="cpu")  # Use "cpu" instead of -1
 
 # Tambahkan model kecil untuk natural language generation
 text_generator = pipeline('text-generation',
                         model='facebook/opt-125m',
                         max_new_tokens=50,
-                        temperature=0.3)
+                        temperature=0.3,
+                        device="cpu",  # Use "cpu" instead of -1
+                        torch_dtype=torch.float32) 
 
 # st.sidebar.image("ai-logo.png",width=200)
 # with open('data.csv', 'rb') as f:
