@@ -1,5 +1,5 @@
 streamlit
 pandas
-transformers
-torch
+transformers==4.35.2
+torch==2.4.0+cpu
 streamlit-aggrid
