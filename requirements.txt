@@ -1,6 +1,6 @@
 streamlit
 pandas
-transformers==4.35.2
+transformers==4.47.1
 torch==2.5.1
 streamlit-aggrid
 tokenizers==0.15.0
