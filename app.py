@@ -7,9 +7,6 @@ from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer
 import torch
 st.set_page_config(layout="wide")
 
-
-st.set_page_config(layout="wide")
-
 # im = Image.open("ai-favicon.png")
 # st.set_page_config(page_title="Table Summarization",
 #     page_icon=im,layout='wide') 
