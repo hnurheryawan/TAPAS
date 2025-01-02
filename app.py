@@ -1,4 +1,5 @@
-
+import os
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 import streamlit as st
 from st_aggrid import AgGrid
 import pandas as pd 
