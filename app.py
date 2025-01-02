@@ -5,6 +5,9 @@ from st_aggrid import AgGrid
 import pandas as pd 
 from transformers import pipeline
 from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch
+
+st.set_page_config(layout="wide")
 
 # im = Image.open("ai-favicon.png")
 # st.set_page_config(page_title="Table Summarization",
