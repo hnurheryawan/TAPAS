@@ -6,7 +6,17 @@ import pandas as pd
 
 import torch
 st.set_page_config(layout="wide")
-from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer
+
+from transformers import (
+
+    AutoModelForCausalLM, 
+
+    AutoTokenizer,
+
+    pipeline
+
+)
+
 
 # im = Image.open("ai-favicon.png")
 # st.set_page_config(page_title="Table Summarization",
