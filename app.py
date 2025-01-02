@@ -1,9 +1,8 @@
 import streamlit as st
 from st_aggrid import AgGrid
 import pandas as pd 
-# from PIL import Image
-from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer
-st.set_page_config(layout="wide")
+from transformers import pipeline
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # im = Image.open("ai-favicon.png")
 # st.set_page_config(page_title="Table Summarization",
