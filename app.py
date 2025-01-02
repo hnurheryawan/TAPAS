@@ -44,14 +44,14 @@ st.markdown("<p style='font-family:sans-serif;font-size: 0.9rem;'>Pre-trained TA
 tqa = pipeline(task="table-question-answering", 
               model="google/tapas-large-finetuned-wtq",
               temperature=0.5,
-              device="cpu")  # Use "cpu" instead of -1
+              device="gpu")  # Use "cpu" instead of -1
 
 # Tambahkan model kecil untuk natural language generation
 text_generator = pipeline('text-generation',
                         model='facebook/opt-125m',
                         max_new_tokens=50,
                         temperature=0.3,
-                        device="cpu",  # Use "cpu" instead of -1
+                        device="gpu",  # Use "cpu" instead of -1
                         torch_dtype=torch.float32) 
 
 # st.sidebar.image("ai-logo.png",width=200)
